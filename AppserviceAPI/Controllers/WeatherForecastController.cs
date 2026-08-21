@@ -31,7 +31,8 @@ namespace AppserviceAPI.Controllers
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = connectionString
+                ConnString = connectionString,
+                TestConfig = testConfigValue
             })
             .ToArray();
         }
